@@ -18,6 +18,10 @@ client.on("message", msg => {
 	  msg.reply("pong");
 	} else if (msg.content === "shit") {
 		msg.reply("You don't say that")
+	} else if (msg.content === "fuck") {
+		msg.reply("I'm Walking here :fire")
+	} else if (msg.content === "Fuck!") {
+		msg.reply("dude stop it :D")
 	}
   })
 
