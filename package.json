@@ -1,0 +1,17 @@
+{
+  "name": "ProfanityPolice",
+  "version": "1.0.0",
+  "description": "profanity police bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "John Glennan",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
+  }
+}
