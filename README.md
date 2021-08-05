@@ -6,5 +6,5 @@ Run npm i && npm start
 You will need to create a .env file and add your bots code or message (@glennan_dev on twitter) me to get the key if you want to be a contributer. 
 
 # Inspirations && Credit
-Idea inspired from Dom Albano 
+Idea inspired from Dom Albano <br>
 Picture from <a href='https://pngtree.com/so/law'>law png from pngtree.com</a>
