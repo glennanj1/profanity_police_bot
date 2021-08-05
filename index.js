@@ -16,6 +16,8 @@ client.on("message", msg => {
 	if (msg.content === "ping") {
 		console.log(msg)
 	  msg.reply("pong");
+	} else if (msg.content === "shit") {
+		msg.reply("You don't say that")
 	}
   })
 
