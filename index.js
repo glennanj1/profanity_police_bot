@@ -33,7 +33,7 @@ client.on("message", msg => {
 			}
 		})
 	} else {
-		console.log('this isn't working')
+		console.log('this is not working')
 	}
   })
 
