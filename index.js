@@ -1,4 +1,5 @@
 const dotenv = require('dotenv');
+const badwordsArray = require('badwords/array')
 
 // require the needed discord.js classes
 const { Client, Intents } = require('discord.js');
@@ -13,16 +14,20 @@ client.once('ready', () => {
 });
 
 client.on("message", msg => {
-	if (msg.content === "ping") {
+	newMsg = msg.content.toLowerCase()
+	if (newMsg === "ping") {
 		console.log(msg)
 	  msg.reply("pong");
-	} else if (msg.content === "shit") {
+	} else if (newMsg === "shit") {
 		msg.reply("You don't say that")
-	} else if (msg.content === "fuck") {
-		msg.reply("I'm Walking here :fire")
-	} else if (msg.content === "Fuck!") {
+	} else if (newMsg === "fuck") {
+		msg.reply("I'm Walking here :fire:")
+	} else if (newMsg === "Fuck!") {
 		msg.reply("dude stop it :D")
-	}
+	} else if (badwordsArray.indexOf(newMsg) > -1) {
+		console.log(newMsg)
+		msg.reply(`${newMsg} is a bad word`)
+	}		
   })
 
 // login to Discord with your app's token;
