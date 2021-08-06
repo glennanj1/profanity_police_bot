@@ -33,7 +33,7 @@ client.on("message", msg => {
 			}
 		})
 	} else {
-		console.log('this is not working')
+		console.log('no curse words detected')
 	}
   })
 
